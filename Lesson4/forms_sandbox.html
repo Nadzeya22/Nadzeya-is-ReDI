@@ -1,0 +1,79 @@
+<! elements: 
+    label
+    select - dropdown - option (selected attirbute)
+    datalist with attr size, multiple - option
+    textarea with  rows, columns
+    option and optgroup
+    textfield
+    fieldset with legend
+    button
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playing with forms</title>
+
+</head>
+<form>
+<fieldset>
+    <legend>Fields as tags</legend>
+<textarea rows="2" columns="4" id="textarea" name="textarea">Write a long piece of text</textarea>
+<br><br>
+<label for="dropdown">My dropdown</label>
+<select id="dropdown" name="dropdown">
+<optgroup label="Simple">
+<option value="1 choice">First choice</option>
+
+</optgroup>
+<optgroup label="Cars">
+<option value="audi" selected>Audi</option>
+<option value="volvo" >Volvo</option>
+</optgroup>
+</select>
+
+<br> <br>
+
+<!why when selected the field shows the value, not the label?>
+<label for="datalist">My datalist</label>
+<input list="datalist" name="datalist" >
+<datalist id="datalist">
+<option value="choice 1">1</option>
+<option value="choice 2" selected>2</option>
+<option value="choice 3">3</option>
+</datalist>
+
+</fieldset>
+<br><br>
+<fieldset>
+    <legend>Fields as input types</legend>
+<label for="text" >Enter text</label><br>
+<input type="text" id="text" name="text" placeholder="John Doe">
+<br>
+<label for="email">Enter email</label><br>
+<input type="email" id="email">
+
+<br>
+<label for="password">Enter password</label><br>
+<input type="password" id="password" name="password">
+<br>
+
+<label for="tel">Enter telephone number</label><br>
+<input type="tel" id="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="1234-456-789" >
+<br>
+<label for="DOB">Enter DOB</label><br>
+<input type="date" id="DOB">
+<br>
+<label for="school">Years of school</label><br>
+<input type="number" id="school" min="4" max="20" placeholder="select number">
+<input type="button" value="Save">
+</fieldset>
+<button >Submit</button> <input type="submit" formtarget="iframe" value="Submit to iframe">
+</form>
+
+<iframe name="iframe"></iframe>
+</datalist>
+</form>
+
+</html>

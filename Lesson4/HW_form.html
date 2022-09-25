@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head> Crazy quiz <title> Crazy quiz</title></head>
+<!Homework requirements:
+
+Create a page containing a contact form that allows the user to fill up their personal information (lesson4-forms.html)
+Create a page with an Iframe (lesson4-iframes.html) that loads lesson4-form.html on page load
+Create two links that (i) targets the contact form (lesson4-forms.html) and (ii) targets a Wikipedia page
+You can style the iframe however you like (height, width, border size and color, etc.)
+Push to your repository (same repo as your previous lessons) 🚀>
+
+<! fields to create:
+text - what would you like to be called
+email - your very first email
+
+color - your eyes
+radio single- do you have all the teeth left?
+number - if you have some out, how many are left? with 32 as max
+
+
+range - how much would you like to have on your bank account
+date - when did you have you first date?
+
+dropdown - which planet would you like to colonize first?
+checkbox - which transport would you use for the trip?
+datalist - who would you take with you on a trip?
+
+textarea - why do you want to rule the world?
+<body>
+
+<h1>Getting to know you </h1>
+
+<i>Let's find out some facts about you </i>
+<fieldset> 
+    <legend> Who are you?</legend>
+<i> Introduce yourself</i><br><br>
+<label for="name">What shall I call you?</label>
+<input type="text" id="name" placeholder="e.g.King Sun II">
+<br><br>
+<label for="email">What was your very first email?</label>
+<input type="email" id="email">
+<div>
+<label for="date">When did you first have a date?</label>
+<input type="date" id="date">
+
+<label for="emaileyes_color">What color shoes was the person wearing?</label>
+<input type="color" id="eyes_color">
+
+<label for="cats_number">How many cats did you have with that person?</label>    
+<input type="number" id="cats_number" min="0" max="10">
+</div>
+<br>
+<input type="button" value="Call my first date">
+</fieldset>
+<br><br>
+<fieldset> <legend>Time to dream</legend> <br>
+<label for="planet">Which planet should the mankind colonise first?</label> 
+<select id="planet"> 
+    <option value="Mercury">Mercury</option>
+    <option value="Mars" >Mars</option>
+    <option value="Neptune">Neptune</option>
+    <option value="Moon">Moon</option>
+    <option value="Jupiter">Jupiter</option>
+</select> 
+<br><br>
+<label for="packing">What would pack for the trip?</label>
+<input list="packing" placeholder="select one">
+
+<!optgroup with datalist??>
+
+<datalist id="packing">
+        <option value="High heels">High heels</option>
+        <option value="sleeping_bag">A sleeping bag</option>
+        <option value="water">A water bottle</option>
+        <option value="icecream">Ice-cream</option>
+        <option value="knife" selected>Knife</option>
+</datalist>
+
+<br>
+<p>Who do you think will meet you on the planet?
+
+<label for="mom"> My mom</label>
+<input type="checkbox" id= "mom" value="My mom">
+
+<label for="cat"> A giant cat</label>
+<input type="checkbox" id="cat" value="cat">
+
+<label for="Keviin"> Keviin</label>
+<input type="checkbox" id="Keviin" value="Keviin"></p>
+<! how to add placeholder to textfield?>
+<p> <label for="why">Why do you want to fly away from here?</label><br>
+    <textarea id="why"  rows="12" columns="420">e.g.Too many wars on planet Earth</textarea> 
+
+</p>
+<input type="button" value="Take me to my dream planet"
+</fieldset>
+
+
+
+
+
+</body>
+</html>
